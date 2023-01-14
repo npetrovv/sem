@@ -174,7 +174,7 @@ p, span, a {
 
 .banner {
   min-height: 350px;
-  background-image: url(img/bg_banner.png);
+  background-image: url(../img/bg_banner.png);
   overflow: hidden;
   background-size: cover;
 }
@@ -326,7 +326,7 @@ p, span, a {
 }
 
 .bottom_left_images {
-  background-image: url(/img/bg.svg);
+  background-image: url(../img/bg.svg);
   background-size: 100% 100%;
 }
 
