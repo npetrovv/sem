@@ -210,7 +210,7 @@ p, span, a {
 
 .banner {
   min-height: 350px;
-  background-image: url(/img/bg_banner.png);
+  background-image: url(../img/bg_banner.png);
   overflow: hidden;
   background-size: cover;
 }
