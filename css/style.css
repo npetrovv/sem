@@ -35,6 +35,18 @@ p, span, a {
   align-items: center;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4F964E;
+}
+
 .header_logo h1 {
   margin: 0;
 }
@@ -42,7 +54,30 @@ p, span, a {
 .header_menu {
   display: flex;
   justify-content: flex-end;
-  margin-top: 15px;
+}
+
+.header_search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  color: #a5a5a5;
+}
+
+.header_search input {
+  border: none;
+  width: 100%;
+  transition: background .55s ease;
+  margin-left: 5px;
+}
+
+.header_search input:hover, .header_search input:focus, .header_search input:active {
+  font-size: 18px;
+  outline: none;
+}
+
+.header_search input:focus, .header_search input:active {
+  border-bottom: 1px #a5a5a5 solid;
 }
 
 .header_menu_mnu {
@@ -174,7 +209,7 @@ p, span, a {
 
 .banner {
   min-height: 350px;
-  background-image: url(../img/bg_banner.png);
+  background-image: url(/img/bg_banner.png);
   overflow: hidden;
   background-size: cover;
 }
@@ -326,7 +361,7 @@ p, span, a {
 }
 
 .bottom_left_images {
-  background-image: url(../img/bg.svg);
+  background-image: url(/img/bg.svg);
   background-size: 100% 100%;
 }
 
