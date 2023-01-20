@@ -479,10 +479,9 @@ p, span, a {
     font-size: 10px;
     margin-top: 10px;
   }
-}
-
-.header_search {
-  margin-top: 5px;
+  .header_search {
+    margin-top: 5px;
+  }
 }
 
 /* Custom, iPhone Retina */
