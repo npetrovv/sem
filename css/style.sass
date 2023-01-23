@@ -37,16 +37,19 @@ p, span, a
 	height: 100%
 	width: 100%
 	color: #a5a5a5
+	padding: 0 15px
+	background-color: #ebebeb
+	border-radius: 25px
+
 	input
 		border: none
 		width: 100%
 		transition: background .55s ease
 		padding: 0
+		background: transparent
 		&:hover, &:focus, &:active
 			font-size: 18px
 			outline: none
-		&:focus, &:active
-			border-bottom: 1px #a5a5a5 solid
 
 .header_menu_mnu
 	display: block
@@ -219,6 +222,8 @@ p, span, a
 	background-color: #F4F4F4
 	padding: 25px 0
 	margin: 10px 0
+	&:hover
+		background-color: #c8ffc7
 
 	.item_title
 		text-align: center
@@ -260,6 +265,16 @@ p, span, a
 				border: 1px #4F964E solid
 				color: #000
 
+.category_link
+	display: flex
+	justify-content: flex-end
+	a
+		text-decoration: none
+		color: #4F964E
+		font-size: 20px
+		transition: transform .25s ease
+		&:hover
+			transform: translate(5px,0)
 
 .bottom_left
 	max-width: 450px
@@ -313,6 +328,16 @@ p, span, a
 		font-size: 12px
 .footer_link
 	text-align: right
+	a
+		.fa
+			color: #4F964E
+			font-size: 27px
+			padding: 5px
+			&:hover
+				border: 1px #4F964E solid
+				border-radius: 25px
+				
+			
 
 
 @import  "_media.sass"

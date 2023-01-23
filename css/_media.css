@@ -31,6 +31,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .header {
+    margin-bottom: 10px;
+  }
   .header_menu {
     margin-top: 6px;
   }
@@ -55,7 +58,7 @@
     margin-top: 10px;
   }
   .header_search {
-    margin-top: 5px;
+    margin-top: 10px;
   }
 }
 
