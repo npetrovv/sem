@@ -24,7 +24,7 @@ h1, h2, h3, h4 {
   font-family: CormorantGaramond-Bold, sans-serif;
 }
 
-p, span, a {
+p, span, a, button {
   font-family: CormorantGaramond-Regular, sans-serif;
 }
 
@@ -47,6 +47,11 @@ p, span, a {
   background: #4F964E;
 }
 
+.header_left_box {
+  display: flex;
+  align-items: center;
+}
+
 .header_logo h1 {
   margin: 0;
 }
@@ -54,6 +59,7 @@ p, span, a {
 .header_menu {
   display: flex;
   justify-content: flex-end;
+  margin-right: 20px;
 }
 
 .header_search {
@@ -153,7 +159,7 @@ p, span, a {
   display: none;
   position: absolute;
   background-color: #fff;
-  right: -100%;
+  left: -100%;
   transition: all .3s ease;
   width: 300px;
   z-index: 10;
@@ -186,7 +192,7 @@ p, span, a {
 }
 
 .header_menu_link.active {
-  right: 0;
+  left: 0;
   display: flex;
 }
 
@@ -206,6 +212,23 @@ p, span, a {
 
 .header_menu_mnu.active span {
   transform: scale(0);
+}
+
+.header_cart button {
+  text-decoration: none;
+  background-color: #4F964E;
+  padding: 7px 50px;
+  color: #fff;
+  border-radius: 25px;
+  transition: all .25s ease;
+  border: 1px transparent solid;
+  font-family: CormorantGaramond-Regular, sans-serif;
+}
+
+.header_cart button:hover {
+  background-color: transparent;
+  border: 1px #4F964E solid;
+  color: #000;
 }
 
 .banner {
@@ -294,10 +317,11 @@ p, span, a {
   background-color: #F4F4F4;
   padding: 25px 0;
   margin: 10px 0;
+  border: 1px transparent solid;
 }
 
 .item:hover {
-  background-color: #c8ffc7;
+  border: 1px #4F964E solid;
 }
 
 .item .item_title {
@@ -382,7 +406,7 @@ p, span, a {
 }
 
 .bottom_left_images {
-  background-image: url(/img/bg.svg);
+  background-image: url(../img/bg.svg);
   background-size: 100% 100%;
 }
 
@@ -447,6 +471,7 @@ p, span, a {
   color: #4F964E;
   font-size: 27px;
   padding: 5px;
+  border: 1px transparent solid;
 }
 
 .footer_link a .fa:hover {
