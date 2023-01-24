@@ -541,6 +541,9 @@ p, span, a, button {
   .header_search {
     margin-top: 10px;
   }
+  .header_cart button {
+    padding: 0 15px;
+  }
 }
 
 /* Custom, iPhone Retina */
